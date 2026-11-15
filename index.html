@@ -1,0 +1,288 @@
+<!doctype html>
+<html lang="en" data-theme="lumos">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1">
+<title>Jay Patel · Engineering Leader</title>
+<meta name="description" content="Jay Patel — engineering leader. From software engineer to engineering manager, and how I scale teams with AI.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@500;600&family=Inter:wght@400;500;600&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+<link rel="stylesheet" href="styles.css?v=27">
+</head>
+<body>
+<canvas id="sparks" aria-hidden="true"></canvas>
+<div class="incant" id="incant" aria-hidden="true"></div>
+<div class="progress" aria-hidden="true"></div>
+
+<header class="nav">
+  <a href="#top" class="brand">jay patel</a>
+  <nav aria-label="Primary">
+    <a href="#journey">journey</a>
+    <a href="#map">map</a>
+    <a href="#impact">impact</a>
+    <a href="#ai">ai</a>
+    <a href="#leadership">leadership</a>
+    <a href="#skills">skills</a>
+    <a href="#learning">education</a>
+    <a href="#contact">contact</a>
+  </nav>
+  <button id="theme" class="theme" aria-label="Toggle light and dark">nox</button>
+</header>
+
+<main id="top">
+
+  <section class="hero wrap">
+    <div class="hat">
+      <button id="hat-btn" class="hatbtn" aria-expanded="false" aria-controls="hat-say">
+        <svg viewBox="0 0 64 64" aria-hidden="true"><path d="M8 50c8-2 12-4 14-10 2-8 4-22 12-30 2 8 6 12 10 18 4 6 8 14 12 18 2 2 6 3 8 4-14 6-40 6-56 0z" fill="currentColor"/><path d="M6 50c10 8 42 8 52 0" fill="none" stroke="var(--bg)" stroke-width="2"/></svg>
+        <span>Put the Sorting Hat on</span>
+      </button>
+      <div id="hat-say" class="hat-say" hidden>
+        <p class="hat-line" id="hat-line" aria-live="polite"></p>
+        <ul class="hat-why">
+          <li><b>Built, then led.</b> Fifteen years, from engineer to engineering manager.</li>
+          <li><b>Results.</b> Zero incidents at tax peak, six promotions driven.</li>
+          <li><b>Scales with AI.</b> Agents and skills that make a whole team faster.</li>
+        </ul>
+        <a class="btn" href="#impact">Read on</a>
+      </div>
+    </div>
+    <h1 class="reveal" style="--d:.1s">Jay Patel</h1>
+    <p class="role reveal" style="--d:.25s">Engineering Leader · Credit Karma (Intuit) · Charlotte, NC</p>
+    <p class="tag reveal" style="--d:.4s">I started by writing the code and now build the teams that write it. Fifteen years in engineering, driven by one belief: great engineering is a people craft.</p>
+    <div class="cta reveal" style="--d:.55s">
+      <a class="btn" href="#journey">Follow the footsteps</a>
+      <a class="btn ghost" href="#contact">Get in touch</a>
+    </div>
+    <a class="scroll mono" href="#journey" aria-label="Scroll down">scroll</a>
+  </section>
+
+  <section id="journey" class="wrap">
+    <p class="mono label reveal">01 / journey</p>
+    <h2 class="reveal">From IC to manager</h2>
+    <p class="swear mono reveal">“I solemnly swear that I am up to no good.” The map starts in 2014. Follow the footsteps.</p>
+    <div class="map">
+      <div class="trail" aria-hidden="true"></div>
+      <ol class="timeline">
+        <li class="reveal"><span class="when">2014</span><h3>Software Engineer · KPIT Technologies</h3><p>First professional role, shipping production software in Pune.</p></li>
+        <li class="reveal"><span class="when">2015 – 2020</span><h3>Software Engineer · SentriLock</h3><p>Nearly five years in the code, learning what great engineering and great teammates look like from the inside.</p></li>
+        <li class="reveal"><span class="when">2020 – 2021</span><h3>Software Engineering Lead · SentriLock</h3><p>First step beyond individual contribution: leading through design, review and mentorship.</p></li>
+        <li class="reveal"><span class="when">2021 – 2022</span><h3>Engineering Manager · SentriLock</h3><p>The switch from owning code to owning outcomes through people.</p></li>
+        <li class="reveal now"><span class="when">Aug 2022 – present</span><h3>Engineering Manager · Credit Karma (Intuit)</h3><p>Leading the team behind the online credit data platform: operational excellence, tax-season readiness, growing engineers into leaders, and scaling the team with AI.</p></li>
+      </ol>
+    </div>
+    <p class="swear mono end reveal">Mischief managed.</p>
+  </section>
+
+  <section id="map" class="wrap">
+    <p class="mono label reveal">02 / the map</p>
+    <h2 class="reveal">Where the road led</h2>
+    <p class="mono swear reveal" style="margin-top:-.8rem">Watch the footsteps cross the map. Tap a place to see what happened there.</p>
+    <div class="mapwrap reveal">
+      <svg id="mm-svg" viewBox="0 0 800 340" role="img" aria-label="Map of the places in my career"></svg>
+      <button class="mm-replay mono" id="mm-replay" type="button">walk again</button>
+    </div>
+    <div class="mm-detail" id="mm-detail" aria-live="polite"><b class="mono">Tap a place on the map.</b></div>
+  </section>
+
+  <section id="impact" class="wrap">
+    <p class="mono label reveal">03 / impact</p>
+    <h2 class="reveal">Selected outcomes</h2>
+    <p class="mono swear reveal" style="margin-top:-.8rem">Cast <b>Revelio</b>: click a window to reveal the story behind the number.</p>
+    <div class="cabinet">
+      <div class="plaque reveal" style="--d:0.00s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">Tax peak</span><b class="big" data-n="0" data-dec="0" data-suf="">0</b><span class="p-cap">service incidents from my team</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">Tax peak</span><p>Led readiness for the busiest filing peak of the year: runbooks, drills and staffed war rooms across three offices.</p></div>
+        </div>
+      </div>
+      <div class="plaque reveal" style="--d:0.08s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">People</span><b class="big" data-n="6" data-dec="0" data-suf="">0</b><span class="p-cap">promotions driven</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">People</span><p>Coached engineers into tech leads and promotions while the team kept delivering.</p></div>
+        </div>
+      </div>
+      <div class="plaque reveal" style="--d:0.16s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">On-call</span><b class="big" data-n="55" data-dec="0" data-suf="%">0</b><span class="p-cap">fewer pages</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">On-call</span><p>Handed on-call fully to the team and made it quieter at the same time.</p></div>
+        </div>
+      </div>
+      <div class="plaque reveal" style="--d:0.24s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">Security</span><b class="big" data-n="0" data-dec="0" data-suf="">0</b><span class="p-cap">high-severity security risks left</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">Security</span><p>Drove a certificate remediation across critical services to the finish line.</p></div>
+        </div>
+      </div>
+      <div class="plaque reveal" style="--d:0.32s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">Data</span><b class="big" data-n="5.6" data-dec="1" data-suf="M+">0</b><span class="p-cap">W2 records, 100% on time</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">Data</span><p>Partnered with the tax team to ingest a full season of W2 data on a fixed deadline.</p></div>
+        </div>
+      </div>
+      <div class="plaque reveal" style="--d:0.40s" tabindex="0" role="button" aria-pressed="false">
+        <div class="p-in">
+          <div class="p-face p-front"><span class="p-cat mono">AI</span><b class="big" data-n="27" data-dec="0" data-suf="">0</b><span class="p-cap">reusable AI skills built</span><i class="p-hint mono">revelio</i></div>
+          <div class="p-face p-back"><span class="p-cat mono">AI</span><p>A toolkit and a live on-call agent, then coached the team to build their own.</p></div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <section id="ai" class="wrap">
+    <p class="mono label reveal">04 / scaling with ai</p>
+    <h2 class="reveal">Four spells</h2>
+    <p class="tag reveal">AI is a team sport. Cast each spell to see how I build with it, then make it reusable for everyone.</p>
+    <p class="mono meter reveal" id="meter" aria-live="polite">spells cast <b id="cast-n">0</b>/4</p>
+
+    <div class="spells">
+      <article class="spell reveal" style="--d:0s">
+        <button class="cast" aria-expanded="false"><span class="num">1</span><span class="name">Lumos</span><span class="role">Use</span><span class="hint">cast</span></button>
+        <ul class="lines">
+          <li>AI is part of my everyday work.</li>
+          <li>Planning, writing, analysis and code.</li>
+        </ul>
+      </article>
+      <article class="spell reveal" style="--d:.1s">
+        <button class="cast" aria-expanded="false"><span class="num">2</span><span class="name">Accio</span><span class="role">Build</span><span class="hint">cast</span></button>
+        <ul class="lines">
+          <li>I build my own skills.</li>
+          <li>27 reusable ones for leadership work.</li>
+          <li>Handovers, incident summaries, RCAs, trade-offs.</li>
+        </ul>
+      </article>
+      <article class="spell reveal" style="--d:.2s">
+        <button class="cast" aria-expanded="false"><span class="num">3</span><span class="name">Wingardium</span><span class="role">Orchestrate</span><span class="hint">cast</span></button>
+        <ul class="lines">
+          <li>Agents that run work end to end.</li>
+          <li>A live on-call Slack agent for my team.</li>
+          <li>Deploy risk scored 0–100, with rollback steps.</li>
+          <li>Weekly handover in minutes, not half an hour.</li>
+        </ul>
+      </article>
+      <article class="spell here reveal" style="--d:.3s">
+        <button class="cast" aria-expanded="false"><span class="num">4</span><span class="name">Geminio</span><span class="role">Scale</span><span class="hint">cast</span></button>
+        <ul class="lines">
+          <li>Make it reusable, then copy it across teams.</li>
+          <li>Rolling out an agentic product lifecycle across a large org.</li>
+          <li>Coaching engineers to build their own agents.</li>
+        </ul>
+        <span class="now-tag">I'm here</span>
+      </article>
+    </div>
+    <p class="mono note reveal">Everything I've built is on my <a class="lnk" href="https://github.com/pankaj117-dev" target="_blank" rel="noopener">GitHub</a>.</p>
+  </section>
+
+  <section id="leadership" class="wrap">
+    <p class="mono label reveal">05 / leadership</p>
+    <h2 class="reveal">Leading before the title</h2>
+    <p class="mono swear reveal" style="margin-top:-.8rem">Four badges earned long before the manager title.</p>
+    <div class="badges">
+      <article class="bcard reveal" style="--d:0.0s">
+        <div class="crest"><svg class="shield" viewBox="0 0 80 98" aria-hidden="true"><defs><linearGradient id="g0" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><path d="M40 4 74 14v34c0 24-18 40-34 46C24 88 6 72 6 48V14z" fill="url(#g0)"/><path d="M40 10 68 18v30c0 20-15 34-28 40C27 82 12 68 12 48V18z" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/><g transform="translate(24 28) scale(1.35)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 3l2.6 5.6 6.1.7-4.5 4.2 1.2 6L12 16.4 6.6 19.5l1.2-6L3.3 9.3l6.1-.7z"/></g></svg></div>
+        <h3>Head Boy</h3>
+        <p class="mono bsub">Student leadership</p>
+        <p>Chosen by peers and teachers to represent the whole school.</p>
+      </article>
+      <article class="bcard reveal" style="--d:0.1s">
+        <div class="crest"><svg class="shield" viewBox="0 0 80 98" aria-hidden="true"><defs><linearGradient id="g1" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><path d="M40 4 74 14v34c0 24-18 40-34 46C24 88 6 72 6 48V14z" fill="url(#g1)"/><path d="M40 10 68 18v30c0 20-15 34-28 40C27 82 12 68 12 48V18z" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/><g transform="translate(24 28) scale(1.35)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M8 7l-5 5 5 5M16 7l5 5-5 5M14 4l-4 16"/></g></svg></div>
+        <h3>President, CS Society</h3>
+        <p class="mono bsub">College</p>
+        <p>Rebuilt the society's identity and brought students together around technology.</p>
+      </article>
+      <article class="bcard reveal" style="--d:0.2s">
+        <div class="crest"><svg class="shield" viewBox="0 0 80 98" aria-hidden="true"><defs><linearGradient id="g2" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><path d="M40 4 74 14v34c0 24-18 40-34 46C24 88 6 72 6 48V14z" fill="url(#g2)"/><path d="M40 10 68 18v30c0 20-15 34-28 40C27 82 12 68 12 48V18z" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/><g transform="translate(24 28) scale(1.35)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M4 5h16v11H9l-5 4z"/></g></svg></div>
+        <h3>Debate Team</h3>
+        <p class="mono bsub">King's College London</p>
+        <p>Learned to hold a position, steelman the other side, and change my mind.</p>
+      </article>
+      <article class="bcard reveal" style="--d:0.3s">
+        <div class="crest"><svg class="shield" viewBox="0 0 80 98" aria-hidden="true"><defs><linearGradient id="g3" x1="0" y1="0" x2="1" y2="1"><stop offset="0" stop-color="var(--accent)"/><stop offset="1" stop-color="var(--gold)"/></linearGradient></defs><path d="M40 4 74 14v34c0 24-18 40-34 46C24 88 6 72 6 48V14z" fill="url(#g3)"/><path d="M40 10 68 18v30c0 20-15 34-28 40C27 82 12 68 12 48V18z" fill="none" stroke="rgba(255,255,255,.55)" stroke-width="1.2"/><g transform="translate(24 28) scale(1.35)" fill="none" stroke="#fff" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"><path d="M12 21v-9M12 12c0-4-3-6-7-6 0 4 3 6 7 6zM12 14c0-3 2-5 6-5 0 3-2 5-6 5z"/></g></svg></div>
+        <h3>Founder</h3>
+        <p class="mono bsub">University of Cincinnati</p>
+        <p>Started a community from nothing and kept it alive.</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="skills" class="wrap">
+    <p class="mono label reveal">06 / skills</p>
+    <h2 class="reveal">Platform 9&frac34;</h2>
+    <p class="mono swear reveal" style="margin-top:-.8rem">Board the Hogwarts Express. Tap a train to see where it stops.</p>
+    <div class="board reveal" id="board">
+      <div class="bd-head mono"><span>Hogwarts Express &middot; Departures</span><span>Platform 9&frac34;</span></div>
+      <div class="bd-cols mono"><span>Destination</span><span>Stops</span><span>Status</span></div>
+      <div id="bd-rows"></div>
+    </div>
+  </section>
+
+  <section id="learning" class="wrap">
+    <p class="mono label reveal">07 / education</p>
+    <h2 class="reveal">Houses of learning</h2>
+    <p class="mono swear reveal" style="margin-top:-.8rem">Four years of study, four schools of thought.</p>
+    <div class="diplomas">
+      <article class="dip reveal" style="--d:0.00s">
+        <span class="mono dip-y">Year One</span>
+        <b class="dip-yr">2008 – 2011</b>
+        <h3>BSc Computer Science (Hons)</h3>
+        <p class="dip-s">King's College London</p>
+        <p class="dip-n">Thesis: Single-Track Railway Scheduling System</p>
+      </article>
+      <article class="dip reveal" style="--d:0.12s">
+        <span class="mono dip-y">Year Two</span>
+        <b class="dip-yr">2011 – 2012</b>
+        <h3>MSc Computing, IT Law &amp; Management</h3>
+        <p class="dip-s">King's College London</p>
+        <p class="dip-n">Debate team and Computing Society adviser</p>
+      </article>
+      <article class="dip reveal" style="--d:0.24s">
+        <span class="mono dip-y">Year Three</span>
+        <b class="dip-yr">2014 – 2016</b>
+        <h3>MS Computer Science</h3>
+        <p class="dip-s">University of Cincinnati</p>
+        <p class="dip-n">Data Science certification · GPA 3.83</p>
+      </article>
+      <article class="dip reveal" style="--d:0.36s">
+        <span class="mono dip-y">Year Four</span>
+        <b class="dip-yr">2024</b>
+        <h3>Leadership &amp; Business Administration</h3>
+        <p class="dip-s">Duke University, Fuqua School of Business</p>
+        <p class="dip-n">Leadership, business and management</p>
+      </article>
+    </div>
+  </section>
+
+  <section id="contact" class="wrap letter">
+    <div class="seal reveal" aria-hidden="true">JP</div>
+    <p class="mono label reveal">08 / contact</p>
+    <h2 class="reveal">Want to join my house?</h2>
+    <p class="tag reveal">Let's talk. Hiring, mentoring, or trading ideas on engineering leadership: send an owl.</p>
+    <div class="cta reveal">
+      <a class="btn" href="mailto:pankaj117@gmail.com">Send an owl</a>
+      <a class="btn ghost" href="https://www.linkedin.com/in/jay-patel-18679a64/" target="_blank" rel="noopener">LinkedIn</a>
+      <a class="btn ghost" href="https://github.com/pankaj117-dev" target="_blank" rel="noopener">GitHub</a>
+    </div>
+    <p class="mono sign reveal">Yours in mischief, Jay</p>
+  </section>
+</main>
+
+<footer class="mono">mischief managed · © <span id="yr"></span> Jay Patel · opinions are my own, not my employer's · not affiliated with Warner Bros. or J.K. Rowling</footer>
+
+<aside class="fab" aria-label="House points">
+  <div class="fab-ask" id="fab-ask" hidden>
+    <button class="fab-x" id="fab-x" type="button" aria-label="Close">&times;</button>
+    <p><b>Thanks for the points!</b> Sounds like we should talk.</p>
+    <div class="fab-links"><a class="fab-b" href="mailto:pankaj117@gmail.com">Reach out</a><a class="fab-l mono" href="https://www.linkedin.com/in/jay-patel-18679a64/" target="_blank" rel="noopener">LinkedIn</a></div>
+  </div>
+  <div class="jar" aria-hidden="true"><i id="jar-fill"></i></div>
+  <div class="fab-t">
+    <p class="mono fab-n">house points <b id="pts-n">0</b></p>
+    <button class="fab-b" id="award" type="button">+10 for liking this</button>
+    <span class="mono fab-m" id="pts-msg" aria-live="polite"></span>
+  </div>
+</aside>
+
+<script src="script.js?v=27"></script>
+</body>
+</html>
